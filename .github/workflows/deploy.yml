@@ -1,0 +1,14 @@
+name: Publicar aplicativo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  publicar:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: posit-dev/r-shinylive/.github/workflows/deploy-app.yaml@actions-v1
