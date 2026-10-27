@@ -1,0 +1,25 @@
+VERIFICAÇÃO DO DASHBOARD DE ESCOLAS — SÃO PAULO
+Execução: 2026-10-16 21:30:40 -03
+R: 4.3.3
+Registros originais: 7856
+Escolas com fundamental e/ou médio: 3155
+Escolas do recorte localizadas no município: 2968
+Escolas do recorte sem ponto no mapa: 187
+
+
+         Centro Sem localização      Zona Leste      Zona Norte      Zona Oeste 
+             93             187            1050             614             278 
+       Zona Sul 
+            933 
+
+Aprovado: contagens, INEP único, recorte sem dupla contagem, filtros combinados,
+busca literal e sem acentos, casos sem resultado, ausência e invalidez de coordenadas,
+pontos externos, interseção com limites completos, geometrias válidas e exportação CSV.
+
+shiny 1.8.0
+bslib 0.6.1
+leaflet 2.2.3
+sf 1.0.15
+readr 2.1.5
+dplyr 1.1.4
+DT 0.31

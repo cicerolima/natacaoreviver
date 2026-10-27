@@ -1,0 +1,28 @@
+VERIFICAÇÃO DA ATUALIZAÇÃO — NATACAO COMPARTILHADA
+Execução: 27/10/2026 11:47 (America/Sao_Paulo)
+
+Ambiente: Node.js 24; PostgreSQL embarcado via PGlite; R 4.5.1 via webR 0.5.9.
+As requisições REST foram emuladas usando as tabelas, as políticas e a função SQL reais.
+Não foi utilizada uma conta Supabase de produção nem publicado o site do usuário.
+
+APROVADO:
+- Sintaxe de todos os arquivos R e JavaScript.
+- Execução do SQL de configuração e reexecução sem perda de dados.
+- Bloqueio de consulta anônima, escrita direta e usuário sem permissão.
+- Login válido/inválido e leitura compartilhada entre duas contas.
+- Conflitos na primeira gravação e em atualizações, sem sobrescrever dados.
+- Identificação do último editor e incremento da versão.
+- Alunos: zero, estimativa desconhecida, inteiro e rejeição de negativos/fracionários.
+- Escola sem piscina com estrutura terceirizada e estimativa preenchida.
+- Leitura de mais de mil registros, renovação de sessão e falha de rede.
+- Saída da conta limpa os dados; acesso revogado deixa de consultar a base.
+- Verificação original de dados, geometrias, filtros e exportação.
+- Construção do aplicativo Shiny e integração reativa com shiny::testServer.
+- Filtro por piscina e ficha atualizada após alteração de outro editor.
+- Versão de edição preservada enquanto o formulário permanece aberto.
+- Consulta por nomes acentuados no webR/Shinylive.
+
+CONTAGENS PRESERVADAS:
+7.856 escolas na base; 3.155 com fundamental e/ou médio; 2.968 no mapa; 187 sem ponto.
+
+A configuração e o teste final com as duas contas no Supabase devem seguir LEIA_PRIMEIRO.md.
